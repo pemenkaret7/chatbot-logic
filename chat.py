@@ -24,11 +24,11 @@ def main():
 
     while True:
         inputan_pengguna = input(" Anda: ")
-        response = respon_Bot(inputan_pengguna)  # Mendapatkan respon dari chatbot
-        print("Chatbot:", response)  # Menampilkan respon chatbot kepada pengguna
+        response = respon_Bot(inputan_pengguna) 
+        print("Chatbot:", response)  
 
         if "exit" in inputan_pengguna or "quit" in inputan_pengguna: 
             break
 
-if __name__ == "__main__":
+
     main()
