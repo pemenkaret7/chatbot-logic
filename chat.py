@@ -1,7 +1,7 @@
 import nltk
 from nltk.chat.util import Chat, reflections
 
-# Pola-pola dan respon yang akan digunakan oleh chatbot
+#respon chatbot
 pola = [
     ['(hai|halo|hey)', ['Halo!', 'Hai, ada yang bisa saya bantu?']],
     ['(saya|aku) ingin (.*)', ['Kenapa Anda ingin %2?', 'Anda ingin %2 karena apa?']],
@@ -28,7 +28,6 @@ pola = [
     ['(.*)', ['Maaf, saya tidak mengerti.', 'Maaf, saya tidak bisa membantu dengan itu.']]
 ]
 
-# Membuat objek chatbot
 chatbot = Chat(pola, reflections)
 
 def mulai_chat():
